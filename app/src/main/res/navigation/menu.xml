@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    app:startDestination="@id/menu4">
+    <fragment
+        android:id="@+id/menu4"
+        android:name="com.example.proyectodanielruiz.Menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu4_to_mapa22"
+            app:destination="@id/mapa2" />
+        <action
+            android:id="@+id/action_menu4_to_cronometro2"
+            app:destination="@id/cronometro" />
+        <action
+            android:id="@+id/action_menu4_to_guiadeEjercicios"
+            app:destination="@id/guiadeEjercicios" />
+    </fragment>
+    <fragment
+        android:id="@+id/guiadeEjercicios"
+        android:name="com.example.proyectodanielruiz.GuiadeEjercicios"
+        android:label="fragment_guiade_ejercicios"
+        tools:layout="@layout/fragment_guiade_ejercicios" >
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_cardio"
+            app:destination="@id/cardio" />
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_pecho"
+            app:destination="@id/pecho" />
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_abdomen"
+            app:destination="@id/abdomen" />
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_espalda"
+            app:destination="@id/espalda" />
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_biceps3"
+            app:destination="@id/biceps3" />
+        <action
+            android:id="@+id/action_guiadeEjercicios_to_triceps"
+            app:destination="@id/triceps" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardio"
+        android:name="com.example.proyectodanielruiz.Cardio"
+        android:label="fragment_cardio"
+        tools:layout="@layout/fragment_cardio" />
+    <fragment
+        android:id="@+id/biceps3"
+        android:name="com.example.proyectodanielruiz.Biceps"
+        android:label="fragment_biceps"
+        tools:layout="@layout/fragment_biceps" />
+    <fragment
+        android:id="@+id/espalda"
+        android:name="com.example.proyectodanielruiz.Espalda"
+        android:label="fragment_espalda"
+        tools:layout="@layout/fragment_espalda" />
+    <fragment
+        android:id="@+id/abdomen"
+        android:name="com.example.proyectodanielruiz.Abdomen"
+        android:label="fragment_abdomen"
+        tools:layout="@layout/fragment_abdomen" />
+    <fragment
+        android:id="@+id/triceps"
+        android:name="com.example.proyectodanielruiz.Triceps"
+        android:label="fragment_triceps"
+        tools:layout="@layout/fragment_triceps" />
+    <fragment
+        android:id="@+id/pecho"
+        android:name="com.example.proyectodanielruiz.Pecho"
+        android:label="fragment_pecho"
+        tools:layout="@layout/fragment_pecho" />
+    <fragment
+        android:id="@+id/cronometro"
+        android:name="com.example.proyectodanielruiz.Cronometro"
+        android:label="fragment_cronometro"
+        tools:layout="@layout/fragment_cronometro" />
+    <fragment
+        android:id="@+id/mapa2"
+        android:name="com.example.proyectodanielruiz.Mapa"
+        android:label="fragment_mapa2"
+        tools:layout="@layout/fragment_mapa2" />
+</navigation>
